@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Book Club </title>
+    <!-- row css code here  -->
+    <style>
+        .error-msg {
+            background-color: rgb(187, 179, 179);
+            margin-left: 18em;
+        }
+
+        .booksFound {
+            margin-left: 18em;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Search area -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <h2 class="my-5 mb-4">
+                        Welcome To The Book Club <span class="text-success">Happy Reading</span>
+                    </h2>
+                    <p class="fs-6"><q>The library is inhabited by spirits that come out of the pages at night.</q> <br>
+                        <spanc class="fst-italic fw-bold fw-normal fs-5">-Isabel Allende </span>
+                    </p>
+
+                    <!-- input field -->
+                    <input type="text" id="input-field" class="w-50 p-1" placeholder="Search Your Books Here">
+
+                    <!-- search button -->
+                    <button class="btn btn-secondary btn-dark " onclick="searchBooks()">
+                        Search
+                    </button>
+
+                    <!-- Error Massage Box -->
+                    <div class="error-msg d-none text-danger rounded my-5 mb-5 w-50" id="error-massage">
+                        <h4 class="p-2">Please Input a Valid Data !</h4>
+                    </div>
+
+                    <div id="books-found" class=" booksFound rounded bg-success text-white my-5 w-50"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- spinner start here -->
+    <div class="d-flex justify-content-center">
+        <div class="spinner-grow text-dark " id="spinner" style="width: 2rem; height: 2rem;" role="status">
+            <span class="visually-hidden"></span>
+        </div>
+    </div>
+    <!-- spinner end here -->
+
+    <!-- Book Showing Area-->
+    <div class="container mb-5">
+        <div class="row" id="parent-container">
+
+        </div>
+    </div>
+
+
+    <!--  Bootstrap  js link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom Js File linking here -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>
+
+     <!-- The End 
+     Thank You   -->
